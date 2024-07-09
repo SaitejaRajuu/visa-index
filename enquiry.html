@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visa and Immigration Inquiry Form</title>
+    <link rel="stylesheet" href=".css">
+</head>
+<body>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background: url('enquery_form.jpg') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: center;
+}
+
+.form-container {
+    width: 100%;
+    max-width: 1000px;
+    padding: 20px;
+    background-color:transparent; /* semi-transparent white background */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+    border-radius: 8px;
+    height: 900px;/* remove fixed height */
+    margin-top: 15vh;
+}
+
+.form-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #cc0000; /* black text color */
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #fdfdfd;
+    font-size: 30px;
+    font-weight: 100;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.form-group button {
+    display: block;
+    width: 100%; /* full width */
+    padding: 10px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    height: 100px;
+}
+
+.form-group button:hover {
+    background-color: #218838;
+}
+
+    </style>
+
+
+    <div class="form-container">
+        <h2 style="font-size: 55px; color: white;">Visa and Immigration Inquiry Form</h2>
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="fullName">Full Name:</label>
+                <input type="text" id="fullName" name="fullName" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="country">Country of Origin:</label>
+                <input type="text" id="country" name="country" required>
+            </div>
+            <div class="form-group">
+                <label for="visaType">Visa Type:</label>
+                <select id="visaType" name="visaType" required>
+                    <option value="">Select Visa Type</option>
+                    <option value="student">Student Visa</option>
+                    <option value="work">Work Visa</option>
+                    <option value="tourist">Tourist Visa</option>
+                    <option value="immigrant">Immigrant Visa</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit">Submit Inquiry</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

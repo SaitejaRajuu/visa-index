@@ -1,0 +1,25 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 20px;
+}
+h1, h2, h3 {
+    color: black;
+}
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+.visa-type, .application-step, .consideration {
+    margin-bottom: 20px;
+}
+.header-image{
+    width: 1280px;
+
+}
+li{
+    color: black;
+}
+p{
+    color: black;
+}
